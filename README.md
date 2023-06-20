@@ -1,7 +1,7 @@
 ## Use Laravel UI with Fortify
 
 ## Install Laravel
-`laravel new localisation  `
+`laravel new jetsream-ui-app  `
 
 ### Install Laravel UI
 `composer require laravel/ui`  
