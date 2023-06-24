@@ -35,4 +35,26 @@ Fortify::registerView(function () {
 Fortify::requestPasswordResetLinkView(function () {
             return view('auth.passwords.email');
         }); 
+```  
+## Add GDPR Cookie Consent in Laravel
+
+> using a package by spatie  
+
+`composer require spatie/laravel-cookie-consent`
+
+> Publish the config, and view files:  
+
+`php artisan vendor:publish --provider="Spatie\CookieConsent\CookieConsentServiceProvider" --tag="cookie-consent-config"`
+
+`php artisan vendor:publish --provider="Spatie\CookieConsent\CookieConsentServiceProvider" --tag="cookie-consent-views"`
+
+> Now, the package is all set, you can simply put the following line of code within your body tags to make it work, likeso:
+
+```
+//in your blade template
+@include('cookie-consent::index')
+```
+
+
+
 
